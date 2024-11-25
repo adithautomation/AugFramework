@@ -17,6 +17,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Utility 
 {
 	
+	
+	public void waitForSeconds(int seconds)
+	{
+		try 
+		{
+			Thread.sleep(seconds*1000);
+		} catch (InterruptedException e) 
+		{
+			
+		}	
+		
+	}
+	
 	public static String getScreenshotAsBase64(WebDriver driver)
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
